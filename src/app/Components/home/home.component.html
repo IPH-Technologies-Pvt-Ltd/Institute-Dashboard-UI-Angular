@@ -1,0 +1,106 @@
+<div class="full-container d-flex align-items-center p-0 m-0">
+  <div
+    class="card rounded-5 shadow"
+    style="background-color: #eeedf8; border: none; margin: 22px"
+  >
+    <mat-drawer-container class="example-container rounded-5">
+      <mat-drawer
+        mode="side"
+        opened="true"
+        class="example-sidenav"
+        style="background-color: #5155c3; width: 60px; text-align: center"
+      >
+        <br />
+        <i
+          class="fa-solid fa-user mt-5 mb-2"
+          style="
+            color: #f68c5d;
+            background-color: white;
+            border-radius: 150px;
+            font-size: x-large;
+            padding: 8px 10px;
+          "
+        ></i>
+        <br />
+        <i
+          class="fa-solid fa-house my-3"
+          style="color: white; font-size: x-large"
+        ></i>
+        <br />
+        <i
+          class="fa-regular fa-comments my-3"
+          style="color: white; font-size: x-large"
+        ></i>
+        <br />
+        <i
+          class="fa-regular fa-star my-3"
+          style="color: white; font-size: x-large"
+        ></i>
+        <br />
+        <i
+          class="fa-solid fa-gear my-3"
+          style="color: white; font-size: x-large"
+        ></i>
+        <br />
+        <i
+          class="fa-solid fa-bars my-3"
+          style="color: white; font-size: x-large"
+        ></i>
+        <span
+          class="material-symbols-outlined mb-5 mx-3"
+          style="
+            color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-size: xx-large;
+          "
+        >
+          backspace
+        </span>
+      </mat-drawer>
+      <mat-drawer-content class="p-4">
+        <div class="row">
+          <div class="col-lg-9 col-md-9 col-sm-12">
+            <div class="row">
+              <div class="col-lg-9 col-md-9 col-sm-12">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <app-weekly></app-weekly>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <app-weekly></app-weekly>
+                  </div>
+
+                  <div class="col-12">
+                    <app-line-chart></app-line-chart>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-xl-3 col-sm-12 col-lg-3 custom-column">
+                <app-progress-bar></app-progress-bar>
+                <app-rounded-progress></app-rounded-progress>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <app-horizontal-chart></app-horizontal-chart>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <app-vertical-chart></app-vertical-chart>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12 col-md-3">
+            <div class="d-flex flex-column">
+              <app-search></app-search>
+              <app-chart></app-chart>
+              <app-multiple-progress></app-multiple-progress>
+              <app-pie-chart></app-pie-chart>
+            </div>
+          </div>
+        </div>
+      </mat-drawer-content>
+    </mat-drawer-container>
+  </div>
+</div>

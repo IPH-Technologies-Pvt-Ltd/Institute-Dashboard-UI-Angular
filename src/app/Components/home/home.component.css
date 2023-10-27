@@ -1,0 +1,17 @@
+.full-container {
+  background-color: #b1ccf9;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+.example-container {
+  display: flex;
+}
+.custom-column {
+  height: 100px;
+}
+
+.shadow {
+  box-shadow: 1px 4px 6px rgba(10, 4, 14, 5);
+}
